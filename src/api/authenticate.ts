@@ -4,7 +4,5 @@
  * @param username
  * @param password
  */
-export default (username: string, password: string): Promise<boolean> =>
-  new Promise<boolean>(resolve =>
-    resolve(username === "username" && password === "password"),
-  );
+export const basicAuth = async (username: string, password: string): Promise<boolean> =>
+    await username === "username" && password === "password";
