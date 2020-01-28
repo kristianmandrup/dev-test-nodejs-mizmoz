@@ -54,3 +54,16 @@ A controller uses a repository to adapt and act on a particular data source
 
 The redis repository could be made generic, assuming one RedisDB per model entity.
 Then we could store a registry of model -> RedisDB in some configuration.
+
+## Notes
+
+Implementation has not been tested due to time constraints. 
+This is just a challenge to demonstrate setting up a basic NodeJS API gateway/server with optional Redis store backing.
+The solution provided (see the code) should demonstrate capabilities.
+
+If I was to test it fully with a test suite it would be too much effort for throw away code.
+
+It was a great experience to use [routing-controllers](https://github.com/typestack/routing-controllers) for a
+modern routing/controller experience, using decorators.
+
+Hope you like it ;)
